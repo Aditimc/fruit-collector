@@ -21,14 +21,18 @@ function preload(){
   fruit3_img = loadImage("images/melon2.png");
   fruit4_img = loadImage("images/orange2.png");
   fruit5_img = loadImage("images/pineapple2.png");
-  fruitGroup = new Group();
+  
 }
+
 function setup() {
   createCanvas(1000, 600);
   database = firebase.database();
+  fruitGroup = new Group();
   game = new Game();
   game.getState();
   game.start();
+
+  
   
 }
 
